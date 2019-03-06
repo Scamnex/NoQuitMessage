@@ -1,0 +1,5 @@
+name: NoQuitMessage
+main: Scamnex\Main;
+version: 1.0.0
+author: Scamnex
+api: 3.0.0, 4.0.0
