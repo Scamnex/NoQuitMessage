@@ -18,7 +18,7 @@ class Main extends PluginBase implements Listener
         $player = $e->getPlayer();
         $name = $player->getName();
         $e->setQuitMessage("");
-        
+    }
     public function onDisable()
     {
         $this->getLogger()->info(T::AQUA . "Deaktiviert");
