@@ -13,15 +13,16 @@ class Main extends PluginBase implements Listener
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
     }
     
-    public function onQuit (PlayerQuitEvent $e)
+    public function onDisable()
+    {
+        $this->getLogger()->info(T::AQUA . "Deaktiviert");
+    }
+        public function onQuit (PlayerQuitEvent $e)
     {
         $player = $e->getPlayer();
         $name = $player->getName();
         $e->setQuitMessage("");
     }
-    public function onDisable()
-    {
-        $this->getLogger()->info(T::AQUA . "Deaktiviert");
     }
     }
 }
