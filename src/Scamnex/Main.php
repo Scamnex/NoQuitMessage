@@ -23,6 +23,4 @@ class Main extends PluginBase implements Listener
         $name = $player->getName();
         $e->setQuitMessage("");
     }
-    }
-    }
 }
